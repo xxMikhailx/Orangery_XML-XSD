@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/flowers"
+        xmlns:tns="http://www.example.com/flowers"
+        elementFormDefault="qualified">
+
+    <element name="flowers">
+        <complexType>
+            <sequence>
+                <element ref="tns:flower" minOccurs="2" maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Flower">
+    <sequence>
+        <element name="name" type="string" />
+        <element name="origin" type="string" />
+        <element name="visual-parameters" type="tns:Visual" />
+    </sequence>
+    <attribute name="id" use="required">
+        <simpleType>
+            <restriction base="ID">
+                <pattern value="([a-z])[0-9]{1,3}" />
+            </restriction>
+        </simpleType>
+    </attribute>
+    </complexType>
+
+    <complexType name="GardenFlower">
+        <complexContent>
+            <extension base="tns:Flower">
+                <sequence>
+                    <element name="growing-tips" type="tns:Growing" />
+                    <element name="multiplying" type="tns:Multiplying" />
+                </sequence>
+                <attribute name="soil" use="optional" default="dirt">
+                    <simpleType>
+                        <restriction base="string">
+                            <enumeration value="dirt"></enumeration>
+                            <enumeration value="podzolic"></enumeration>
+                            <enumeration value="sod-podzolic"></enumeration>
+                        </restriction>
+                    </simpleType>
+                </attribute>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="CutFlower">
+        <complexContent>
+            <extension base="tns:Flower">
+                <sequence>
+                    <element name="price" type="tns:Price"></element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Visual">
+        <sequence>
+            <element name="stem-color" type="string" />
+            <element name="leaf-color" type="string" />
+            <element name="plant-size" type="integer" />
+        </sequence>
+    </complexType>
+
+    <complexType name="Growing">
+        <sequence>
+            <element name="temperature" type="tns:Temperature" />
+            <element name="watering" type="integer" />
+        </sequence>
+    </complexType>
+
+    <simpleType name="Multiplying">
+        <restriction base="string">
+            <enumeration value="leaf"></enumeration>
+            <enumeration value="stalk"></enumeration>
+            <enumeration value="seed"></enumeration>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Temperature">
+        <restriction base="integer">
+            <minInclusive value="-50"></minInclusive>
+            <maxInclusive value="60"></maxInclusive>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Price">
+        <restriction base="integer">
+            <minInclusive value="0"></minInclusive>
+        </restriction>
+    </simpleType>
+
+    <element name="flower" type="tns:Flower" abstract="true" />
+    <element name="cut-flower" type="tns:CutFlower" substitutionGroup="tns:flower" />
+    <element name="garden-flower" type="tns:GardenFlower" substitutionGroup="tns:flower" />
+
+</schema>

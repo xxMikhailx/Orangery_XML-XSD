@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.example.com/flowers"
+         xsi:schemaLocation="http://www.example.com/flowers orangery.xsd">
+
+    <garden-flower id="g1" soil="podzolic">
+        <name>Rose</name>
+        <origin>Holland</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Red</leaf-color>
+            <plant-size>60</plant-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>20</temperature>
+            <watering>80</watering>
+        </growing-tips>
+        <multiplying>stalk</multiplying>
+    </garden-flower>
+
+    <garden-flower id="g2" soil="dirt">
+        <name>Thoren</name>
+        <origin>Asia</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Violet</leaf-color>
+            <plant-size>30</plant-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>22</temperature>
+            <watering>60</watering>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+    </garden-flower>
+
+    <garden-flower id="g3" soil="sod-podzolic">
+        <name>Kermek</name>
+        <origin>Central Asia</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Blue</leaf-color>
+            <plant-size>40</plant-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>18</temperature>
+            <watering>10</watering>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+    </garden-flower>
+
+    <garden-flower id="g4" soil="dirt">
+        <name>Abelia</name>
+        <origin>Japan</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Pink</leaf-color>
+            <plant-size>150</plant-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>16</temperature>
+            <watering>70</watering>
+        </growing-tips>
+        <multiplying>stalk</multiplying>
+    </garden-flower>
+
+    <garden-flower id="g5" soil="podzolic">
+        <name>Impatiens</name>
+        <origin>Africa</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Pink</leaf-color>
+            <plant-size>30</plant-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>21</temperature>
+            <watering>170</watering>
+        </growing-tips>
+        <multiplying>stalk</multiplying>
+    </garden-flower>
+
+    <garden-flower id="g6" soil="sod-podzolic">
+        <name>Vallota</name>
+        <origin>South Africa</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Red</leaf-color>
+            <plant-size>60</plant-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>25</temperature>
+            <watering>90</watering>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+    </garden-flower>
+
+    <garden-flower id="g7" soil="dirt">
+        <name>Hedychium</name>
+        <origin>South Asia</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Yellow</leaf-color>
+            <plant-size>45</plant-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>27</temperature>
+            <watering>105</watering>
+        </growing-tips>
+        <multiplying>leaf</multiplying>
+    </garden-flower>
+
+    <garden-flower id="g8" soil="dirt">
+        <name>Jasminum</name>
+        <origin>China</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>White</leaf-color>
+            <plant-size>190</plant-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>19</temperature>
+            <watering>85</watering>
+        </growing-tips>
+        <multiplying>stalk</multiplying>
+    </garden-flower>
+
+    <cut-flower id="f1">
+        <name>Iris</name>
+        <origin>Holland</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>White</leaf-color>
+            <plant-size>40</plant-size>
+        </visual-parameters>
+        <price>60000</price>
+    </cut-flower>
+
+    <cut-flower id="f2">
+        <name>Gerbera</name>
+        <origin>Holland</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Red</leaf-color>
+            <plant-size>60</plant-size>
+        </visual-parameters>
+        <price>40000</price>
+    </cut-flower>
+
+    <cut-flower id="f3">
+        <name>Tulip</name>
+        <origin>Iran</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Yellow</leaf-color>
+            <plant-size>30</plant-size>
+        </visual-parameters>
+        <price>30000</price>
+    </cut-flower>
+
+    <cut-flower id="f4">
+        <name>Chrysanthemum</name>
+        <origin>Asia</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>White</leaf-color>
+            <plant-size>55</plant-size>
+        </visual-parameters>
+        <price>45000</price>
+    </cut-flower>
+
+    <cut-flower id="f5">
+        <name>Lily</name>
+        <origin>Greece</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>White</leaf-color>
+            <plant-size>90</plant-size>
+        </visual-parameters>
+        <price>95000</price>
+    </cut-flower>
+
+    <cut-flower id="f6">
+        <name>Clove</name>
+        <origin>Germany</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>Red</leaf-color>
+            <plant-size>70</plant-size>
+        </visual-parameters>
+        <price>15000</price>
+    </cut-flower>
+
+    <cut-flower id="f7">
+        <name>Peony</name>
+        <origin>Greece</origin>
+        <visual-parameters>
+            <stem-color>Green</stem-color>
+            <leaf-color>White</leaf-color>
+            <plant-size>75</plant-size>
+        </visual-parameters>
+        <price>60000</price>
+    </cut-flower>
+
+</flowers>

@@ -1,0 +1,7 @@
+
+ERROR - 7 : 16 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'name1'. One of '{"http://www.example.com/flowers":name}' is expected.
+09.01.2016 14:34:17,477 [main] ERROR by.bsu.orangery.validator.FlowerErrorHandler - 7 : 16 - cvc-complex-type.2.4.a: Invalid content was found starting with element 'name1'. One of '{"http://www.example.com/flowers":name}' is expected.
+ERROR - 21 : 40 - cvc-id.2: There are multiple occurrences of ID value 'g1'.
+09.01.2016 14:35:59,205 [main] ERROR by.bsu.orangery.validator.FlowerErrorHandler - 21 : 40 - cvc-id.2: There are multiple occurrences of ID value 'g1'.
+ERROR - 21 : 40 - cvc-attribute.3: The value 'g1' of attribute 'id' on element 'garden-flower' is not valid with respect to its type, 'null'.
+09.01.2016 14:35:59,207 [main] ERROR by.bsu.orangery.validator.FlowerErrorHandler - 21 : 40 - cvc-attribute.3: The value 'g1' of attribute 'id' on element 'garden-flower' is not valid with respect to its type, 'null'.
